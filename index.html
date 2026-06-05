@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal</title>
+</head>
+<style>
+:root {
+            --azul-muy-claro: #e0f2fe; /* Celeste muy suave para el fondo */
+            --celeste: #7dd3fc;       /* Celeste acento */
+            --azul-medio: #0ea5e9;    /* Azul intermedio para detalles */
+            --azul-oscuro: #0369a1;   /* Azul profundo para textos importantes */
+            --texto-principal: #334155;
+            --blanco: #ffffff;
+            --negro: #050505;
+        }
+        /*fondo de imagen*/
+        body{
+        background-image: url(fondo1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        background-attachment: fixed;
+
+        }   
+        /*color y tipo de titulos*/
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: rgb(165, 255, 9);
+        }
+        /*formato para el titulo 1*/
+        header h1 {
+            text-align: center;
+            padding: 60px 20px 0px;
+            font-size: 4em;
+            margin: 0 50px 0;
+        }
+        /*formato para parrafi*/
+        header p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0px 0px 0px;
+            text-align: center;
+            font-size: 250%;
+            color: rgb(255, 255, 255)
+        }
+        /*borde de los subtitulos*/
+        .contenedor {
+            max-width: 800px;
+            margin: 0px auto 0px auto;
+            padding: 35px;
+            border-radius: 12px;
+        }
+        /*linea de bajo del titulo*/ 
+        .seccion-titulo {
+            text-align: center;
+            margin: 0 0 0;
+            margin-bottom: 20px;
+            font-size: 3em;
+            border-bottom: 3px solid var(--celeste);
+            padding-bottom: 10px;
+        }
+        /*diseño de lista de subtitulos*/
+         .lista-subtitulos li {
+            background-color: blanchedalmond;
+            margin-bottom: 15px;
+            padding: 15px 15px;
+            border-radius: 8px;
+            border-left: 8px solid var(--azul-medio);
+            border-right: 8px solid var(--azul-medio);
+            font-size: 1.2em;
+            font-weight: 1000;
+            color: rgb(69, 86, 81);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        /* Efecto al pasar el ratón por los subtítulos */
+        }
+        .lista-subtitulos li:hover {
+            transform: translateX(10px);
+            background-color: #e9c730;
+        }
+        /* Iconode cada subtítulo */
+        .lista-subtitulos li::before {
+            content: "💻";
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+          /* Espacio para contenido de ejemplo */
+        .area-lectura {
+            background-color: #809dba;
+            padding: 20px;
+            border-radius: 50px;
+            border: 5px solid #122744;
+        }
+        /* Diseño Responsivo para celulares */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .contenedor {
+                margin: 0 15px 30px 15px;
+                padding: 20px;
+            }
+        }
+</style>
+</div>
+    <header>
+        <h1>Mi Biblioteca de Estudio</h1>
+        <p>Un espacio tranquilo y organizado para apuntes, reflexiones y lectura profunda.</p>
+    </header>
+    <main class="contenedor">
+        
+        <h2 class="seccion-titulo">Índice de Contenidos</h2>
+
+        <!-- Lista con puntos para meter los subtítulos -->
+        <ul class="lista-subtitulos">
+            <a href="https://drive.google.com/drive/folders/0B1bacKw3e-KBfndkR0luVUtKYll2U09NR3EybHp2UEQ0VTNXbnZkc3hwMzUtVE9GWmFNUXM?resourcekey=0-plCyke1tHRMLbSp3LlQrNg&usp=drive_link"><li>Historia y Literatura Clásica</li></a>
+            <a href="libro uno.html"><li>Apuntes de Ciencias Naturales</li></a>
+            <a href="libro uno.html"><li>Filosofía y Pensamiento Crítico</li></a>
+            <a href="libro uno.html"><li>Resúmenes de Libros Mensuales</li></a>
+            <a href="libro uno.html"><li>Guías y Técnicas de Estudio</li></a>
+        </ul>
+        <!-- Un área extra de ejemplo donde iría el texto -->
+        <div class="area-lectura">
+            <h3>Acerca de este espacio</h3>
+            <p>Puedes usar este diseño para documentar tus lecturas. La combinación de 
+                tonos celestes y azules ayuda a reducir la fatiga visual, mientras que 
+                las fuentes elegidas facilitan la concentración durante largas sesiones 
+                de estudio.</p>
+        </div>
